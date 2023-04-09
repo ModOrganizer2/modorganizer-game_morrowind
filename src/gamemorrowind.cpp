@@ -85,8 +85,7 @@ QList<ExecutableInfo> GameMorrowind::executables() const
     << ExecutableInfo("Morrowind", findInGameFolder(binaryName()))
     << ExecutableInfo("Morrowind Launcher", findInGameFolder(getLauncherName()))
     << ExecutableInfo("MGE XE", findInGameFolder("MGEXEgui.exe"))
-    << ExecutableInfo("LOOT", QFileInfo(getLootPath())).withArgument("--game=\"Morrowind\"")
-  ;
+    << ExecutableInfo("LOOT", QFileInfo(getLootPath())).withArgument("--game=\"Morrowind\"");
 }
 
 QList<ExecutableForcedLoadSetting> GameMorrowind::executableForcedLoads() const

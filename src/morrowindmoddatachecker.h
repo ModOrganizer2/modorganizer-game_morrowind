@@ -11,9 +11,9 @@ public:
 protected:
   virtual const FileNameSet& possibleFolderNames() const override
   {
-    static FileNameSet result{"fonts",    "meshes",  "music", "shaders",     "sound",
-                              "textures", "video",   "mwse",  "distantland", "mits",
-                              "icons",    "bookart", "splash"};
+    static FileNameSet result{"fonts",    "meshes",  "music",  "shaders",     "sound",
+                              "textures", "video",   "mwse",   "distantland", "mits",
+                              "icons",    "bookart", "splash", "animations"};
     return result;
   }
   virtual const FileNameSet& possibleFileExtensions() const override
